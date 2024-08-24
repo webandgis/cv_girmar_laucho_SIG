@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girmar Laucho</title>
+
+
+
+<!--Boostrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--CSSS-->
+
+<link rel="stylesheet" href="style.css">
+
+ <!--Foontawesome-->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<!--Leaflet-->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+<script src="leaflet.filelayer.js"></script>
+
+
+
+<!--Charts-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="img/cv_LauchoAreGirmar.pdf">
+        <i > <svg id="icon" href="https://www.linkedin.com/in/girmar-laucho-a39376138/" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="48" ><path fill="white" d="M394-151q-26-40-43-82.5T323-330H172q35 70 91 115t131 64ZM152-390h160q-3-24-4-43.5t-1-44.5q0-21 .5-42.5T311-569H152q-7 24-9.5 44.5T140-478q0 26 2.5 45t9.5 43Zm20-239h150q12-55 30-99t43-82q-85 29-135 69.5T172-629Zm212 0h193q-15-64-38.5-110.5T480-822q-35 37-58.5 85T384-629Zm255 0h149q-35-65-92.5-111T566-809q25 38 42.5 82t30.5 98ZM480-80q-84 0-157-30.5T196-195q-54-54-85-126.5T80-478q0-84 31-157.5T196-763q54-54 127-85.5T480-880q84 0 157 31.5T764-763q54 54 85 127.5T880-478q0 17-1 34t-4 34h-62q4-17 5.5-32.5T820-478q0-26-2.5-46.5T808-569H648q3 30 4.5 49.5T654-478q0 14-.5 28.5T651-410h-61q2-21 3-36t1-32q0-21-1-40.5t-5-50.5H373q-4 31-5 50.5t-1 40.5q0 20 1 38.5t5 49.5h177v60H384q20 75 42 119t54 71q21-22 38.5-49t31.5-56v159q-17 3-34.5 4.5T480-80Zm318-39L670-247v103h-60v-206h206v60H712l128 128-42 43Z"/></svg>
+        </i>
+      Licenciada Girmar Laucho Arellán
+      
+    </a>
+    <ul id="media">
+      <li>
+        <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://github.com/webandgis"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i id="iconNav" class="fab fa-github"></i
+      ></a>
+      </li>
+        <li><a class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="img/cv_LauchoAreGirmar.pdf"
+          role="button"
+          data-mdb-ripple-color="white"
+          ><i id="iconNav" class="fas fa-file-pdf"></i></a></li>
+    </ul>
+    
+  </div>
+</nav>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-6 col-md-8 col-sm-12" id="map">
+              
+            </div>
+            <div class="col-6 col-md-2 col-sm-9" id="chart1"> 
+              
+              <h5 id="titleTable"> Experiencia Laboral </h5> <br>
+
+              <canvas id="myChart"height="250" ></canvas>
+              
+
+            
+              <table class="table table-dark">
+                <thead>
+                  <td colspan="2" id="tableTitle" >Escolaridad y Experiencia Laboral</td>
+                </thead>
+                <tbody>
+                  
+                 <thead>
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" id="udelar">Universidad de la República <br>
+                      Reválida y convalidación (2023)</td> 
+                
+                  </tr>
+                 </thead>
+                 
+                 
+                  <tr>
+                    
+                    <td colspan="2"  id="ucv">Universidad Central de Venezuela <br> Título:
+                      Licenciada en Geografía (2018)</td> 
+                
+                    
+                  </tr>
+                  <thead>
+
+                    <tr>
+                    
+                      <td colspan="2" class="table-active" id="mtop">MTOP <br> Cargo:
+                        Consultora de Sistemas de Información Geográfica (2023-Actualidad)</td> 
+
+                  </thead>
+
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" id="fcien">Facultad de Ciencias UDELAR <br> Cargo:
+                      Ayudante Grado I (Julio 2024)</td> 
+                
+                  </tr>
+
+
+
+                  <thead>
+                    <tr>
+                    <td colspan="2" id="ine">Fondo de Población de las Naciones Unidas/INE
+                      <br> Cargo:
+                      Analista de Datos y Sistemas de Información Geográfica (2021-2023)</td> 
+                  </tr>
+                  </thead>
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" id="dnc">Dirección Nacional de Catastro <br> Cargo:
+                      Analista de Sistemas de Información Geográfica (2019-2020)</td> 
+                
+                  </tr>
+                  <thead>
+                    <tr>
+                    <td colspan="2" id="igvsb">Instituto Geográfico de Venezuela Simón Bolívar <br> Cargo:
+                      Analista de Datos y Sistemas de Información Geográfica (2019)</td> 
+                  </tr>
+                  </thead>
+
+                
+                  
+
+
+                </tbody>
+              </table>
+              
+
+
+            
+            
+            
+            
+            
+            
+            </div>
+            <div class="col-6 col-md-2" id="chart2">
+              <canvas id="chart"height="250"></canvas>
+              <table class="table table-dark" id="table2">
+                <thead>
+                  <td colspan="2" id="tableTitle" >Historial Académico </td>
+                </thead>
+                <tbody>
+
+                  <td colspan="2" >Data Analytics
+                    (Julio 2024)</td>
+              
+                </tr>
+                 
+                  <tr>
+                    
+                    <td colspan="2" class="table-active">Python-Django<br> 
+                      (Febrero 2024)</td>
+                
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="2" >Introducción a Análisis y Visualización de Datos en R
+                      <br> 
+                      (Mayo 2024)</td>
+                
+                  </tr>
+                  <thead>
+                    <tr>
+                    <td colspan="2" class="table-active">PYTHON - Programación Web<br> Institución:
+                      Instituto IBEC (3 meses)</td>
+                  </tr>
+                  </thead>
+
+                  <tr>
+                    
+                    <td colspan="2" >SIG con Python en Qgis<br> Institución:
+                      UDEMY (5 horas)</td>
+                
+                  </tr>
+
+                  
+
+                 
+
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" >Flujos de Trabajo (Creación de Geodatabase) <br>Institución:
+                      AEROTERRA (24 horas)</td> 
+                
+                  </tr>
+                  <thead>
+                    <tr>
+                    <td colspan="2" >Automating Qgis 3 With Python<br> Institución:
+                      UDEMY (7 horas)</td>
+                  </tr>
+                  </thead>
+                  
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" >Programming for Everybody
+                      (Getting Started with Python) <br>Institución:
+                      Universidad de Michigan (16 horas)</td> 
+                
+                  </tr>
+                  <thead>
+                    <tr>
+                    <td colspan="2" >Introduction to Structured Query Language (SQL)
+                      <br> Institución:
+                      Universidad de Michigan (15 horas)</td>
+                  </tr>
+                  </thead>
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" >React <br> Institución:
+                      CODERHOUSE <br>36 horas</td> 
+                
+                    
+                  </tr>
+                  <thead>
+                    <tr>
+                    <td colspan="2" >Javascript <br> Institución:
+                      CODERHOUSE <br> 36 Horas</td>  
+                  </tr>
+                  </thead>
+                  <tr>
+                    
+                    <td colspan="2" class="table-active" >Desarrollo Web <br> Institución:
+                      CODERHOUSE <br> 38 Horas</td> 
+                
+                  </tr>
+                  <thead>
+                   
+                </tbody>
+              </table>
+              
+            
+
+            </div>
+           
+          </div>
+    </main>
+
+
+
+<footer>
+  <footer class="text-center text-white" style="background-color: #313131;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+      
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.linkedin.com/in/girmar-laucho-a39376138/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i id="iconFooter" class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://github.com/webandgis"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i id="iconFooter" class="fab fa-github"></i
+        ></a>
+        
+       
+      <h6 id="map_coords" class="text-center">Longitud: -34.889, Latitud:--56.174 </h6>
+     
+    
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Data -->
+    
+    
+  </footer>
+</footer>
+<!--Main JS-->
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+</body>
+
+
+</html>

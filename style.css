@@ -1,0 +1,124 @@
+body{
+    background-color:#313131;
+    
+
+}
+
+#map { 
+    
+    height: 90vw; 
+    
+}
+@media (max-width: 579px) {
+    #map {
+      width: 100%;
+    }
+  }
+
+
+nav{
+    background-color:#313131;
+    border-bottom: 1px solid grey;
+
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+}
+.container-fluid a i{
+    color: white;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+.navbar-brand:hover{
+    color: grey;
+}
+.navbar-icon {
+    margin-right: 10px;
+  }
+#media{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2rem;
+   
+    
+}
+#media li {
+    margin-right: 10px;
+  }
+#iconNav{
+    margin-right: 30px;
+    cursor: pointer;
+    
+
+}
+#icon{
+    color: white
+}
+
+
+#titleTable{
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 8%;
+    position: absolute;
+    color: white;
+    
+}
+#myChart{
+    margin-top: 5%;
+}
+#chart{
+    margin-top: 17%;
+}
+
+
+table{
+    text-align: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-top: 5%;
+    border-radius: 30% solid grey;
+   
+}
+thead{
+    border-bottom: 1px solid grey;
+}
+
+#tableTitle{
+    font-weight: bold;
+}
+#table2{
+    text-align: center;
+    font-size: 0.67rem;
+    cursor: pointer;
+    margin-top: 7%;
+    padding: 0;
+    border-radius: 30% solid grey;
+}
+footer{
+    border-top: 1px solid grey;
+    height: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.5rem;
+}
+
+#iconFooter{
+    color: white;
+}
+
+#footerData{
+    color: white;
+}
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
